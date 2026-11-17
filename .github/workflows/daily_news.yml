@@ -24,7 +24,7 @@ jobs:
 
       - name: Run news digest
         env:
-          GMAIL_USER: ${{ secrets.GMAIL_USER }}
-          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          GMAIL_USER: ${{ secrets.MY_EMAIL }}
+          GMAIL_APP_PASSWORD: ${{ secrets.MY_PASS }}
           MAIL_TO: ${{ secrets.MAIL_TO }}
         run: python news_digest.py
